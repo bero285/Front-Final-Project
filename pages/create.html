@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/create-update.css" />
+    <title>News Management</title>
+  </head>
+  <body>
+    <div class="createNews">
+      <h2>Create News</h2>
+      <form onsubmit="addNews(event)" id="newsForm">
+        <div class="inputContainer">
+          <span>Title</span>
+          <input type="text" required id="title" />
+        </div>
+        <div class="inputContainer">
+          <span>Description</span>
+          <textarea name="description" required id="description"></textarea>
+        </div>
+        <div class="inputContainer">
+          <span>Category</span>
+          <select id="category" required>
+            <option value="" selected disabled>Select Category</option>
+            <option value="Politics">Politics</option>
+            <option value="Science">Science</option>
+            <option value="LifeStyle">LifeStyle</option>
+            <option value="Computer">Computer</option>
+          </select>
+        </div>
+
+        <div class="editorName">
+          <div class="nameContainer">
+            <span>Editor FirstName</span>
+            <input type="text" required id="firstname" />
+          </div>
+
+          <div class="nameContainer">
+            <span>Editor LastName</span>
+            <input type="text" required id="secondname" />
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="index.html" class="button">Cancel</a>
+          <button type="submit" class="button">Save</button>
+        </div>
+      </form>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
